@@ -59,9 +59,9 @@ python main.py generate "Machine learning" --strategy top_p --version v1
 **v5 Wikipedia pretrain** (tiktoken, laptop-safe tiny preset):
 
 ```bash
-python -m trainer.train_v5 --size tiny --seq-len 128 --batch-size 8 --no-compile --no-resume
+python -m trainer.train_v5 --size tiny --seq-len 256 --batch-size 8 --no-compile --no-resume
 # or
-python main.py train-v5 --size tiny --seq-len 128 --batch-size 8
+python main.py train-v5 --size tiny --seq-len 256 --batch-size 8
 ```
 
 Resume is the default. Checkpoints are saved to `checkpoints/v5_tiny/`. Watch the log with `tail -f logs/train_v5_tiny.log`.
