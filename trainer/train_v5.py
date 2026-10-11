@@ -24,7 +24,7 @@ if str(root_dir) not in sys.path:
 
 from model.model import GPTLanguageModel
 from model.scaling import SCALE_PRESETS, estimate_parameters, get_preset, print_scale_table
-from myai_datasets.wikipedia_loader import get_wiki_dataloader
+from myai_datasets.local_loader import get_local_dataloader as get_wiki_dataloader
 from trainer.cpu_runtime import configure_cpu_runtime, has_cpu_bf16_accel
 
 
