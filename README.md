@@ -9,7 +9,7 @@ The current model is **v5 tiny, 19.2M parameters**, trained on a laptop in two s
 | Stage | Data | Steps | Average loss |
 |---|---|---|---|
 | 1. Pretrain | Wikipedia | up to a 100,000-step budget | 5.6 |
-| 2. Continue | Shakespeare text | 19,000 | 2.2 |
+| 2. Continue | Shakespeare text | 16,000 | 2.2 |
 
 The two losses are measured on different datasets and are not comparable. Shakespeare is a small, stylistically narrow corpus, so a lower loss there does not mean a better model.
 
